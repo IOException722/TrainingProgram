@@ -2,6 +2,7 @@ package matrimony.foodninja;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -44,6 +45,11 @@ public class MainActivity extends ActionBarActivity {
         mListView = (ListView)findViewById(R.id.list_view_1);
         myAdapter = new MyAdapter();
         mListView.setAdapter(myAdapter);
+
+        void printInLOg()
+    {
+        Log.v("PRINT"."vgjkncklsdcsdc");
+    }
 
     }
 
