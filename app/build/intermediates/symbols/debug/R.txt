@@ -8,8 +8,9 @@ int anim abc_slide_in_bottom 0x7f050006
 int anim abc_slide_in_top 0x7f050007
 int anim abc_slide_out_bottom 0x7f050008
 int anim abc_slide_out_top 0x7f050009
-int array food_starter 0x7f0b0000
-int array foodquantity 0x7f0b0001
+int array food 0x7f0b0000
+int array food_starter 0x7f0b0001
+int array foodquantity 0x7f0b0002
 int attr actionBarDivider 0x7f010064
 int attr actionBarItemBackground 0x7f010065
 int attr actionBarPopupTheme 0x7f01005e
@@ -447,6 +448,7 @@ int id disableHome 0x7f0d000c
 int id dropdown 0x7f0d001c
 int id dummy_view1 0x7f0d005f
 int id dummy_view2 0x7f0d0061
+int id dynamic_spinner 0x7f0d004f
 int id edit_query 0x7f0d0042
 int id end 0x7f0d0014
 int id end_padder 0x7f0d005d
@@ -493,7 +495,6 @@ int id shortcut 0x7f0d0039
 int id showCustom 0x7f0d000f
 int id showHome 0x7f0d0010
 int id showTitle 0x7f0d0011
-int id spinner1 0x7f0d004f
 int id split_action_bar 0x7f0d0007
 int id src_atop 0x7f0d0020
 int id src_in 0x7f0d0021

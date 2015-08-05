@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\pre-dexed\debug\classes-93ec0400903cbef7d2b9ad1071732382a74be3d6.jar" />
-    </item>
-    <item
-        jar="C:\Users\Abhay Kumar\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-cfb6a418c988d5d71443fb99a3eaa0b98a9480d7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jar="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-f94ec56b600c91a58d15f95b9d7fb464bf801cab.jar" />
+        <dex dex="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-954c21872f61466459e8df3d3fe1eaf35d77c23b.jar" />
     </item>
     <item
-        jar="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jar="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\pre-dexed\debug\classes-6e9ef0578e5858bec6d402a5da75a059f8512ae9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\pre-dexed\debug\classes-cf2fc52f63760be313abc74e2a58aa74efd01595.jar" />
+        <dex dex="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\pre-dexed\debug\classes-3dd0bd38b8387dc9d881d152847434e05858f834.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nripesh Pious\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-527469f336989d47a4d6dc46afeaa0d76d4bcc75.jar" />
     </item>
 
 </items>

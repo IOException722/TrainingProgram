@@ -2,31 +2,40 @@ package matrimony.foodninja;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
+    ArrayList<String> mArrayList;
     ListView mListView;
-    ArrayList<Boolean> mArrayboolean;
+    //ArrayList<Boolean> mArrayboolean;
     ArrayAdapter mArrayAdapter;
     ArrayList<String> mFoodList;
     ArrayList<Integer> mFoodImageList;
     ArrayList<Integer> mFoodQty;
     LayoutInflater mInflater;
     MyAdapter myAdapter;
+
+    Spinner mDyanamicSpinner;
+    SpinnerAdapter mSpinnerAdapter;
+    ArrayList<String> mSpinnerList;
     Integer [] quantity={0,0,0,0,0,0,0,0,0,0};
 
     @Override
@@ -46,10 +55,28 @@ public class MainActivity extends ActionBarActivity {
         myAdapter = new MyAdapter();
         mListView.setAdapter(myAdapter);
 
-        void printInLOg()
-    {
-        Log.v("PRINT"."vgjkncklsdcsdc");
-    }
+
+        // Initialize the spinner
+        mDyanamicSpinner = (Spinner)findViewById(R.id.dynamic_spinner);
+
+        mSpinnerList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food)));
+
+        mSpinnerAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mSpinnerList);
+        mDyanamicSpinner.setAdapter(mSpinnerAdapter);
+        // setOnItemSelectedListener for Spinners
+        mDyanamicSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                Log.v("item selected", mSpinnerList.get(position).toString());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+                Log.v("nothing", "nothing");
+            }
+        });
 
     }
 

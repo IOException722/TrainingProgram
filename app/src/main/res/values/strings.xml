@@ -4,6 +4,16 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string-array name="food">
+        <item>Main Course </item>
+        <item>Starters</item>
+        <item>Dinner </item>
+
+    </string-array>
+
+
+
+
     <string-array name="food_starter">
         <item>Idly </item>
         <item>Plain Dosa </item>
