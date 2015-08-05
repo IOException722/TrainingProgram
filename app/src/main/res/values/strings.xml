@@ -30,5 +30,13 @@
         <item>0</item>
 
     </integer-array>
+    <string-array name="array_menu">
+    <item>Starter</item>
+    <item>Main Course</item>
+    <item>Desserts</item></string-array>
+
+    <string name="title_activity_drwawer">Drwawer</string>
+    <string name="title_activity_drawer_filter">DrawerFilter</string>
+    <string name="title_activity_final_order">FinalOrder</string>
 
 </resources>
