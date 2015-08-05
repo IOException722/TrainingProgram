@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FoodNinja</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="food_starter">
+        <item>Idly </item>
+        <item>Plain Dosa </item>
+        <item>Rawa Dosa </item>
+        <item>Ghee Dosa</item>
+        <item>Podi Dosa</item>
+        <item>Masala Dosa</item>
+        <item>Vadai</item>
+        <item>Paniyaram</item>
+        <item>Appam</item>
+        <item>Fried Idly</item>
+    </string-array>
+
+    <integer-array name="foodquantity">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+    </integer-array>
+
+</resources>
