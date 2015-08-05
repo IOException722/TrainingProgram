@@ -9,7 +9,6 @@ int anim abc_slide_in_top 0x7f050007
 int anim abc_slide_out_bottom 0x7f050008
 int anim abc_slide_out_top 0x7f050009
 int array food_starter 0x7f0b0000
-int array foodquantity 0x7f0b0001
 int attr actionBarDivider 0x7f010064
 int attr actionBarItemBackground 0x7f010065
 int attr actionBarPopupTheme 0x7f01005e

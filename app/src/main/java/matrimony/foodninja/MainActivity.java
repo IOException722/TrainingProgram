@@ -1,6 +1,7 @@
 package matrimony.foodninja;
 
 import android.support.v7.app.ActionBarActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,15 +9,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
-
 
 public class MainActivity extends ActionBarActivity {
     ListView mListView;
@@ -28,28 +31,48 @@ public class MainActivity extends ActionBarActivity {
     LayoutInflater mInflater;
     MyAdapter myAdapter;
     Integer [] quantity={0,0,0,0,0,0,0,0,0,0};
-
+    String [] food = {"Starter", "Main Course", "Launch"};
+    Boolean[] foodselected = {false, false, false};
+    Spinner mDyanamicSpinner;
+    SpinnerAdapter mSpinnerAdapter;
+    ArrayList<String> mSpinnerList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mListView= (ListView) findViewById(R.id.list_view_1);
         mFoodImageList = new ArrayList<Integer>(Arrays.asList(DataClass.imageData));
         mFoodList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
+        mDyanamicSpinner = (Spinner)findViewById(R.id.spinner1);
+        mSpinnerList = new ArrayList<String>(Arrays.asList(food));
+        mSpinnerAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mSpinnerList);
+        mDyanamicSpinner.setAdapter(mSpinnerAdapter);
 
-     //mFoodPrice = new ArrayList<Integer>(Arrays.asList(getResources().getIntArray(R.array.foodquantity)));
+        mDyanamicSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-        mFoodQty = new ArrayList<Integer>(Arrays.asList(quantity));
-        mInflater = getLayoutInflater();
-        mListView = (ListView)findViewById(R.id.list_view_1);
-        myAdapter = new MyAdapter();
-        mListView.setAdapter(myAdapter);
+                /*Log.v("item selected", mSpinnerList.get(position).toString());*/
+                foodselected[position] = true;
 
-        void printInLOg()
-    {
-        Log.v("PRINT"."vgjkncklsdcsdc");
-    }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+                Log.v("nothing", "nothing");
+            }
+        });
+
+        //mFoodPrice = new ArrayList<Integer>(Arrays.asList(getResources().getIntArray(R.array.foodquantity)));
+
+        if(foodselected[0]) {
+            mFoodQty = new ArrayList<Integer>(Arrays.asList(quantity));
+            mInflater = getLayoutInflater();
+            mListView = (ListView) findViewById(R.id.list_view_1);
+            myAdapter = new MyAdapter();
+            mListView.setAdapter(myAdapter);
+        }
 
     }
 
