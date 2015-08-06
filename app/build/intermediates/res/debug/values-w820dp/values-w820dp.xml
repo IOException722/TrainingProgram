@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/values-w820dp/dimens.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/values-w820dp/dimens.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <dimen name="activity_horizontal_margin">64dp</dimen>
 </resources>

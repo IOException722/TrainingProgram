@@ -4,21 +4,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+=======
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/dynamic_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-      />
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        />
 
     <ListView
+<<<<<<< HEAD
 
         android:layout_below="@+id/spinner1"
+=======
+       android:layout_below="@id/dynamic_spinner"
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
         android:id="@+id/list_view_1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

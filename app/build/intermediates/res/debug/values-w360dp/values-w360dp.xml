@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-w360dp/values-w360dp.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-w360dp/values-w360dp.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <integer name="abc_max_action_buttons">3</integer>
 </resources>

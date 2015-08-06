@@ -42,6 +42,7 @@ ADDED from AndroidManifest.xml:16:17
 	android:name
 		ADDED from AndroidManifest.xml:16:27
 activity#matrimony.foodninja.DrawerFilter
+<<<<<<< HEAD
 ADDED from AndroidManifest.xml:21:9
 	android:label
 		ADDED from AndroidManifest.xml:23:13
@@ -59,6 +60,19 @@ ADDED from AndroidManifest.xml:31:9
 		ADDED from AndroidManifest.xml:33:13
 	android:name
 		ADDED from AndroidManifest.xml:32:13
+=======
+ADDED from AndroidManifest.xml:19:9
+	android:label
+		ADDED from AndroidManifest.xml:21:13
+	android:name
+		ADDED from AndroidManifest.xml:20:13
+activity#matrimony.foodninja.FinalOrder
+ADDED from AndroidManifest.xml:23:9
+	android:label
+		ADDED from AndroidManifest.xml:25:13
+	android:name
+		ADDED from AndroidManifest.xml:24:13
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.2.1:20:5

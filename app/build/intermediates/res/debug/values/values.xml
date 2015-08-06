@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/values/strings.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/values/strings.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <string-array name="array_menu">
     <item>Starter</item>
     <item>Main Course</item>
     <item>Desserts</item></string-array>
+<<<<<<< HEAD
     <string-array name="deserts">
         <item>Gulab Jamum </item>
         <item>Jalebi</item>
@@ -17,6 +22,13 @@
         <item>Batasa</item>
         <item>Dhekua</item>
         <item>Chanaamrit</item>
+=======
+    <string-array name="food">
+        <item>Main Course </item>
+        <item>Starters</item>
+        <item>Dinner </item>
+
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     </string-array>
     <string-array name="food_starter">
         <item>Idly </item>
@@ -43,6 +55,7 @@
         <item>0</item>
 
     </integer-array>
+<<<<<<< HEAD
     <string-array name="main_course">
          <item>Veg Pulao </item>
         <item>Plain rice </item>
@@ -56,6 +69,9 @@
         <item>Dal tadka</item>
     </string-array>
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -204,11 +220,19 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -251,11 +275,16 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/values/strings.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/values/strings.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">FoodNinja</string>
     <string name="hello_world">Hello world!</string>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -265,17 +294,36 @@
     <string name="title_activity_drwawer">Drwawer</string>
     <string name="title_activity_final_order">FinalOrder</string>
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_drawer_filter">DrawerFilter</string>
+    <string name="title_activity_drwawer">Drawer</string>
+    <string name="title_activity_final_order">FinalOrder</string>
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/values/styles.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/values/styles.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>

@@ -6,4 +6,8 @@
         android:id="@+id/draw_text"
         android:layout_width="wrap_content"
         android:layout_height="match_parent" />
+<<<<<<< HEAD
 </LinearLayout><!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/layout/drawer_list_element.xml -->
+=======
+</LinearLayout><!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/layout/drawer_list_element.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee

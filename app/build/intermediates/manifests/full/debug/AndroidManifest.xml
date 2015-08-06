@@ -24,12 +24,16 @@
         </activity>
         <activity
             android:name="matrimony.foodninja.DrawerFilter"
+<<<<<<< HEAD
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+=======
+            android:label="@string/title_activity_drawer_filter" >
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
         </activity>
         <activity
             android:name="matrimony.foodninja.FinalOrder"

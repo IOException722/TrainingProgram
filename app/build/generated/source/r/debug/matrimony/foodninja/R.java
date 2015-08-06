@@ -22,10 +22,16 @@ public final class R {
     }
     public static final class array {
         public static final int array_menu=0x7f0b0000;
+<<<<<<< HEAD
         public static final int deserts=0x7f0b0001;
         public static final int food_starter=0x7f0b0002;
         public static final int foodquantity=0x7f0b0003;
         public static final int main_course=0x7f0b0004;
+=======
+        public static final int food=0x7f0b0001;
+        public static final int food_starter=0x7f0b0002;
+        public static final int foodquantity=0x7f0b0003;
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1573,6 +1579,10 @@ containing a value of this type.
         public static final int dropdown=0x7f0d001c;
         public static final int dummy_view1=0x7f0d0066;
         public static final int dummy_view2=0x7f0d0068;
+<<<<<<< HEAD
+=======
+        public static final int dynamic_spinner=0x7f0d0055;
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
         public static final int edit_query=0x7f0d0042;
         public static final int end=0x7f0d0014;
         public static final int end_padder=0x7f0d0064;
@@ -1621,7 +1631,10 @@ containing a value of this type.
         public static final int showHome=0x7f0d0010;
         public static final int showTitle=0x7f0d0011;
         public static final int spinner=0x7f0d0052;
+<<<<<<< HEAD
         public static final int spinner1=0x7f0d0055;
+=======
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
         public static final int split_action_bar=0x7f0d0007;
         public static final int src_atop=0x7f0d0020;
         public static final int src_in=0x7f0d0021;

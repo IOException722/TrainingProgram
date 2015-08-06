@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\src\androidTest\res"/><source path="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\generated\res\rs\androidTest\debug"/><source path="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\generated\res\generated\androidTest\debug"/></dataSet><mergedItems/></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="C:\Users\Nripesh Pious\TrainingProgram\app\src\androidTest\res"/><source path="C:\Users\Nripesh Pious\TrainingProgram\app\build\generated\res\rs\androidTest\debug"/><source path="C:\Users\Nripesh Pious\TrainingProgram\app\build\generated\res\generated\androidTest\debug"/></dataSet><mergedItems/></merger>
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee

@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="22.2.1"><source path="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\assets"/></dataSet><dataSet config="22.2.1"><source path="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\assets"/></dataSet><dataSet config="main"><source path="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="C:\Users\Abhay Kumar\Desktop\FoodNinja\app\src\debug\assets"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="22.2.1"><source path="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\assets"/></dataSet><dataSet config="22.2.1"><source path="C:\Users\Nripesh Pious\TrainingProgram\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\assets"/></dataSet><dataSet config="main"><source path="C:\Users\Nripesh Pious\TrainingProgram\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="C:\Users\Nripesh Pious\TrainingProgram\app\src\debug\assets"/></dataSet></merger>
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee

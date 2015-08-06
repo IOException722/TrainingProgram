@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-km-rKH/values-km-rKH.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-km-rKH/values-km-rKH.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"រកមើល​ទៅ​ដើម"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"រកមើល​ឡើងលើ"</string>

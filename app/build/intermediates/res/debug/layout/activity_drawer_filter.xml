@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <android.support.v4.widget.DrawerLayout
+=======
+<android.support..widget.DrawerLayout
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,11 +43,17 @@
         android:layout_height="match_parent"
         android:layout_gravity="right"
         android:orientation="vertical">
+<<<<<<< HEAD
 
         <EditText
             android:id="@+id/drawer_edit_text"
             android:layout_width="240dp"
 
+=======
+        <EditText
+            android:id="@+id/drawer_edit_text"
+            android:layout_width="240dp"
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
             android:layout_height="wrap_content"
             android:layout_gravity="right"/>
         <ListView
@@ -53,6 +63,7 @@
             android:layout_gravity="right"
             android:divider="@android:color/transparent"
             android:dividerHeight="0dp"
+<<<<<<< HEAD
             >
 
         </ListView>
@@ -61,3 +72,11 @@
 
 </android.support.v4.widget.DrawerLayout>
 <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/layout/activity_drawer_filter.xml -->
+=======
+            ></ListView>
+
+    </LinearLayout>
+
+</android.support..widget.DrawerLayout>
+<!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/layout/activity_drawer_filter.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee

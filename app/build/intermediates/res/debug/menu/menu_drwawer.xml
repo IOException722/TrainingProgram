@@ -4,4 +4,8 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
+<<<<<<< HEAD
 <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/src/main/res/menu/menu_drwawer.xml -->
+=======
+<!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/src/main/res/menu/menu_drwawer.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee

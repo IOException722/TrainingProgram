@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-hdpi/values-hdpi.xml -->
+=======
+    <!-- From: file:/C:/Users/Nripesh%20Pious/TrainingProgram/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-hdpi/values-hdpi.xml -->
+>>>>>>> e106a912076d6e899be81d39e5c75ddd2cb03cee
     <eat-comment/>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
           <item name="barSize">18.66dp</item>
