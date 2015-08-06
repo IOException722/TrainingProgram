@@ -9,6 +9,7 @@ public class DataClass {
                        R.drawable.allizzwell,
                        R.drawable.allizzwell,
                        R.drawable.allizzwell,
+
                        R.drawable.allizzwell,
                        R.drawable.allizzwell,
                        R.drawable.allizzwell,

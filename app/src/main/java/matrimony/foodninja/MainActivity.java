@@ -19,42 +19,94 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.InputMismatchException;
 
 public class MainActivity extends ActionBarActivity {
     ListView mListView;
     ArrayList<Boolean> mArrayboolean;
     ArrayAdapter mArrayAdapter;
-    ArrayList<String> mFoodList;
+    ArrayList<String> mMianCourseList;
+    ArrayList<String> mStarterList;
     ArrayList<Integer> mFoodImageList;
     ArrayList<Integer> mFoodQty;
     LayoutInflater mInflater;
     MyAdapter myAdapter;
-    Integer [] quantity={0,0,0,0,0,0,0,0,0,0};
-    String [] food = {"Starter", "Main Course", "Launch"};
-    Boolean[] foodselected = {false, false, false};
+    ArrayList<Integer> quantity;
+    ArrayList<Boolean> foodselected;
     Spinner mDyanamicSpinner;
     SpinnerAdapter mSpinnerAdapter;
     ArrayList<String> mSpinnerList;
+    //HashMap<Boolean, HashMap<>>;
+    int size;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mListView= (ListView) findViewById(R.id.list_view_1);
+
+
+      /*  foodselected = new Boolean[3];
+        for(int i=0;i<3;i++)
+        {
+            foodselected[i] = false;
+        }*/
+        quantity = new ArrayList<Integer>();
+        for(int i=0;i<10;i++)
+        {
+            quantity.add(0);
+        }
+
         mFoodImageList = new ArrayList<Integer>(Arrays.asList(DataClass.imageData));
-        mFoodList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
+        mMianCourseList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
+        mStarterList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
         mDyanamicSpinner = (Spinner)findViewById(R.id.spinner1);
-        mSpinnerList = new ArrayList<String>(Arrays.asList(food));
+        mSpinnerList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.array_menu)));
         mSpinnerAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mSpinnerList);
         mDyanamicSpinner.setAdapter(mSpinnerAdapter);
+        foodselected = new ArrayList<Boolean>();
+        size = mSpinnerList.size();
+        
+        for(int i=0;i<size;i++)
+        {
+            foodselected.add(false);
+        }
 
         mDyanamicSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Log.v("item selected", mSpinnerList.get(position).toString());
+                Log.v("position is", Integer.toString(position));
+             /*   foodselected.set(position, true);
+                for(int i=0;i<size;i++)
+                {
+                    if(i!=position)
+                    {
+                        foodselected.set(i,false);
+                    }
+                }
+*/
+                if (position==1) {
+                    Log.v("inside00", "Inside starter");
 
-                /*Log.v("item selected", mSpinnerList.get(position).toString());*/
-                foodselected[position] = true;
+                    mInflater = getLayoutInflater();
+                    mListView = (ListView) findViewById(R.id.list_view_1);
+                    myAdapter = new MyAdapter();
+                    mListView.setAdapter(myAdapter);
+                    Log.v("inside0", "Inside starter");
+                }
+                else if(position==0)
+                {
+                    
+                }
+                else
+                {
 
+                }
+
+            //    myAdapter.notifyDataSetChanged();
+
+                //   myDynamic.notifyDataSetChanged();
             }
 
             @Override
@@ -66,13 +118,7 @@ public class MainActivity extends ActionBarActivity {
 
         //mFoodPrice = new ArrayList<Integer>(Arrays.asList(getResources().getIntArray(R.array.foodquantity)));
 
-        if(foodselected[0]) {
-            mFoodQty = new ArrayList<Integer>(Arrays.asList(quantity));
-            mInflater = getLayoutInflater();
-            mListView = (ListView) findViewById(R.id.list_view_1);
-            myAdapter = new MyAdapter();
-            mListView.setAdapter(myAdapter);
-        }
+
 
     }
 
@@ -109,11 +155,12 @@ public class MainActivity extends ActionBarActivity {
             imageView.setImageResource(mFoodImageList.get(position));
 
 
+
             TextView fooditem = (TextView)convertView.findViewById(R.id.fooditem);
-            fooditem.setText(mFoodList.get(position));
+            fooditem.setText(mMianCourseList.get(position));
 
             TextView qty =  (TextView) convertView.findViewById(R.id.quantity);
-            qty.setText(mFoodQty.get(position).toString());
+            qty.setText(quantity.get(position).toString());
 
             return convertView;
         }
@@ -124,6 +171,7 @@ public class MainActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+
     }
 
     @Override
