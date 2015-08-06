@@ -36,17 +36,25 @@ public class MainActivity extends AppCompatActivity {
     Spinner mDyanamicSpinner;
     SpinnerAdapter mSpinnerAdapter;
     ArrayList<String> mSpinnerList;
-    Integer [] quantity={0,0,0,0,0,0,0,0,0,0};
+    Integer [] quantity;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mListView= (ListView) findViewById(R.id.list_view_1);
         mFoodImageList = new ArrayList<Integer>(Arrays.asList(DataClass.imageData));
         mFoodList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
 
+        quantity=new Integer[10];
+
+        for (int i=0;i<10;i++)
+        {
+            quantity[i]=0;
+        }
      //mFoodPrice = new ArrayList<Integer>(Arrays.asList(getResources().getIntArray(R.array.foodquantity)));
 
         mFoodQty = new ArrayList<Integer>(Arrays.asList(quantity));
@@ -54,8 +62,7 @@ public class MainActivity extends AppCompatActivity {
         mListView = (ListView)findViewById(R.id.list_view_1);
         myAdapter = new MyAdapter();
         mListView.setAdapter(myAdapter);
-
-
+         
         // Initialize the spinner
         mDyanamicSpinner = (Spinner)findViewById(R.id.dynamic_spinner);
 
@@ -69,6 +76,17 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 Log.v("item selected", mSpinnerList.get(position).toString());
+                if(position==1)
+                {
+
+                            mInflater=getLayoutInflater();
+                            mListView= (ListView) findViewById(R.id.list_view_1);
+                            myAdapter=new MyAdapter();
+                            mListView.setAdapter(myAdapter);
+
+                }
+
+
             }
 
             @Override
