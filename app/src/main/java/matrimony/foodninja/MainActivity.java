@@ -36,6 +36,7 @@ public class MainActivity extends ActionBarActivity {
     ArrayList<Boolean> foodselected;
     Spinner mDyanamicSpinner;
     SpinnerAdapter mSpinnerAdapter;
+
     ArrayList<String> mSpinnerList;
     //HashMap<Boolean, HashMap<>>;
     int size;
@@ -59,7 +60,7 @@ public class MainActivity extends ActionBarActivity {
 
         mFoodImageList = new ArrayList<Integer>(Arrays.asList(DataClass.imageData));
         mMianCourseList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
-        mStarterList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
+        mStarterList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.main_course)));
         mDyanamicSpinner = (Spinner)findViewById(R.id.spinner1);
         mSpinnerList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.array_menu)));
         mSpinnerAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mSpinnerList);

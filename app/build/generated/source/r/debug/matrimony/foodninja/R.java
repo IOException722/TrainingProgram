@@ -24,6 +24,7 @@ public final class R {
         public static final int array_menu=0x7f0b0000;
         public static final int food_starter=0x7f0b0001;
         public static final int foodquantity=0x7f0b0002;
+        public static final int main_course=0x7f0b0003;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"

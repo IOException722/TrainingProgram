@@ -31,6 +31,18 @@
         <item>0</item>
 
     </integer-array>
+    <string-array name="main_course">
+         <item>Veg Pulao </item>
+        <item>Plain rice </item>
+        <item>Fried rice</item>
+        <item>Veg Briyani</item>
+        <item>Sambhar rice</item>
+        <item>Curd Rice</item>
+        <item>PLain rice</item>
+        <item>Zeera rice</item>
+        <item>Dal fry</item>
+        <item>Dal tadka</item>
+    </string-array>
     <!-- From: file:/C:/Users/Abhay%20Kumar/Desktop/FoodNinja/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>

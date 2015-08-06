@@ -16,7 +16,7 @@
         <item>Appam</item>
         <item>Fried Idly</item>
     </string-array>
-    <string name="main_course">
+    <string-array name="main_course">
          <item>Veg Pulao </item>
         <item>Plain rice </item>
         <item>Fried rice</item>
@@ -27,7 +27,7 @@
         <item>Zeera rice</item>
         <item>Dal fry</item>
         <item>Dal tadka</item>
-    </string>
+    </string-array>
 
     <integer-array name="foodquantity">
         <item>0</item>
