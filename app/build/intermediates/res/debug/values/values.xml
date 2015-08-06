@@ -6,6 +6,18 @@
     <item>Starter</item>
     <item>Main Course</item>
     <item>Desserts</item></string-array>
+    <string-array name="deserts">
+        <item>Gulab Jamum </item>
+        <item>Jalebi</item>
+        <item>Icecream Falooda</item>
+        <item>Ladoo</item>
+        <item>Paan</item>
+        <item>Tooty Frooty</item>
+        <item>Bundi</item>
+        <item>Batasa</item>
+        <item>Dhekua</item>
+        <item>Chanaamrit</item>
+    </string-array>
     <string-array name="food_starter">
         <item>Idly </item>
         <item>Plain Dosa </item>

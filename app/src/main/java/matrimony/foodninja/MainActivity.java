@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
     ArrayAdapter mArrayAdapter;
     ArrayList<String> mMianCourseList;
     ArrayList<String> mStarterList;
+    ArrayList<String> mDesertList;
     ArrayList<Integer> mFoodImageList;
     ArrayList<Integer> mFoodQty;
     LayoutInflater mInflater;
@@ -36,7 +37,7 @@ public class MainActivity extends ActionBarActivity {
     ArrayList<Boolean> foodselected;
     Spinner mDyanamicSpinner;
     SpinnerAdapter mSpinnerAdapter;
-
+    Integer pos;
     ArrayList<String> mSpinnerList;
     //HashMap<Boolean, HashMap<>>;
     int size;
@@ -52,6 +53,7 @@ public class MainActivity extends ActionBarActivity {
         {
             foodselected[i] = false;
         }*/
+
         quantity = new ArrayList<Integer>();
         for(int i=0;i<10;i++)
         {
@@ -61,13 +63,14 @@ public class MainActivity extends ActionBarActivity {
         mFoodImageList = new ArrayList<Integer>(Arrays.asList(DataClass.imageData));
         mMianCourseList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.food_starter)));
         mStarterList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.main_course)));
+        mDesertList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.deserts)));
         mDyanamicSpinner = (Spinner)findViewById(R.id.spinner1);
         mSpinnerList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.array_menu)));
         mSpinnerAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mSpinnerList);
         mDyanamicSpinner.setAdapter(mSpinnerAdapter);
         foodselected = new ArrayList<Boolean>();
         size = mSpinnerList.size();
-        
+        mInflater = getLayoutInflater();
         for(int i=0;i<size;i++)
         {
             foodselected.add(false);
@@ -78,32 +81,9 @@ public class MainActivity extends ActionBarActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Log.v("item selected", mSpinnerList.get(position).toString());
                 Log.v("position is", Integer.toString(position));
-             /*   foodselected.set(position, true);
-                for(int i=0;i<size;i++)
-                {
-                    if(i!=position)
-                    {
-                        foodselected.set(i,false);
-                    }
-                }
-*/
-                if (position==1) {
-                    Log.v("inside00", "Inside starter");
-
-                    mInflater = getLayoutInflater();
-                    mListView = (ListView) findViewById(R.id.list_view_1);
-                    myAdapter = new MyAdapter();
-                    mListView.setAdapter(myAdapter);
-                    Log.v("inside0", "Inside starter");
-                }
-                else if(position==0)
-                {
-                    
-                }
-                else
-                {
-
-                }
+                pos = position;
+                myAdapter = new MyAdapter();
+                mListView.setAdapter(myAdapter);
 
             //    myAdapter.notifyDataSetChanged();
 
@@ -148,21 +128,35 @@ public class MainActivity extends ActionBarActivity {
             if(convertView == null){
 
                 convertView = mInflater.inflate(R.layout.starter,parent,false);
-
             }
-
 
             ImageView imageView = (ImageView)convertView.findViewById(R.id.foodimage);
             imageView.setImageResource(mFoodImageList.get(position));
 
 
+            switch(pos)
+            {
+                case 0:
+                    TextView fooditem = (TextView) convertView.findViewById(R.id.fooditem);
+                    fooditem.setText(mMianCourseList.get(position));
+                    TextView qty = (TextView) convertView.findViewById(R.id.quantity);
+                    qty.setText(quantity.get(position).toString());
+                    break;
+                case 1:
+                    TextView foodmaincourse = (TextView) convertView.findViewById(R.id.fooditem);
+                    foodmaincourse.setText(mStarterList.get(position));
 
-            TextView fooditem = (TextView)convertView.findViewById(R.id.fooditem);
-            fooditem.setText(mMianCourseList.get(position));
+                    TextView qtymaincourse = (TextView) convertView.findViewById(R.id.quantity);
+                    qtymaincourse.setText(quantity.get(position).toString());
+                    break;
+                case 2:
+                    TextView deserts = (TextView) convertView.findViewById(R.id.fooditem);
+                    deserts.setText(mDesertList.get(position));
 
-            TextView qty =  (TextView) convertView.findViewById(R.id.quantity);
-            qty.setText(quantity.get(position).toString());
-
+                    TextView qtydeserts = (TextView) convertView.findViewById(R.id.quantity);
+                    qtydeserts.setText(quantity.get(position).toString());
+                    break;
+            }
             return convertView;
         }
     }
