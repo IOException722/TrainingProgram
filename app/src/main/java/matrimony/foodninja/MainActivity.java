@@ -40,6 +40,8 @@ public class MainActivity extends ActionBarActivity {
     Integer pos;
     ArrayList<String> mSpinnerList;
     //HashMap<Boolean, HashMap<>>;
+    ArrayList<String> mSpinnerList2;
+
     int size;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
